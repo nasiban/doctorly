@@ -8,9 +8,9 @@ variable "ami_id" {
 }
 
 variable "key_name" {
-  description = "Name of your AWS key pair"
+  description = "AWS key pair"
 }
 
 variable "public_key_path" {
-  description = "Path to your public SSH key"
+  description = "Path to public SSH key"
 }
