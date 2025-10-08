@@ -1,0 +1,9 @@
+apiVersion: v2
+name: wordpress
+description: A Helm chart for wordpress deployment
+type: application
+version: 1.0.3
+appVersion: "1.16.0"
+maintainers:
+  - name: nasiban
+    email: masoud.nasiban@gmail.com
