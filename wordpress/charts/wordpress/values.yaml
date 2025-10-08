@@ -1,4 +1,0 @@
-mysqlRootPassword: rootpassword
-mysqlDatabase: wordpress
-mysqlUser: wordpress
-mysqlPassword: wordpresspassword
