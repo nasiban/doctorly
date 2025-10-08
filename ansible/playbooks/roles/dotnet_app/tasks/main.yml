@@ -1,0 +1,26 @@
+---
+- name: Create app directory
+  file:
+    path: /opt/dotnetapp
+    state: directory
+    mode: '0755'
+
+- name: Copy app source files
+  copy:
+    src: files/
+    dest: /opt/dotnetapp/
+
+- name: Copy docker-compose template
+  template:
+    src: templates/docker-compose.yml.j2
+    dest: /opt/dotnetapp/docker-compose.yml
+
+- name: Copy .env template
+  template:
+    src: ../postgres/templates/.env.j2
+    dest: /opt/dotnetapp/.env
+
+- name: Build and start Docker stack
+  community.docker.docker_compose:
+    project_src: /opt/dotnetapp
+    state: present

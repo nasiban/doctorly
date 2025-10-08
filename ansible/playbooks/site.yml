@@ -1,0 +1,8 @@
+---
+- name: Deploy .NET Core app with PostgreSQL using Docker Compose
+  hosts: all
+  become: yes
+
+  roles:
+    - docker
+    - dotnet_app
