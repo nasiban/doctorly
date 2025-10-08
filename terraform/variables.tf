@@ -4,7 +4,7 @@ variable "aws_region" {
 
 variable "ami_id" {
   description = "Ubuntu 22.04 AMI ID"
-  default     = "ami-0fc5d935ebf8bc3bc" # update if your region differs
+  default     = "ami-0fc5d935ebf8bc3bc" 
 }
 
 variable "key_name" {
